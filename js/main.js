@@ -48,10 +48,7 @@ const getAge = () => {
 
     let age = prompt ('Введите Ваш возраст');
 
-    if(age == '') {
-        alert('Вы не ввели возраст, введите еще раз');
-        getAge();
-    } else if(age.length <= 3 && age !== 0 && parseInt(age)) {
+    if(age.length <= 3 && age !== 0 && parseInt(age)) {
         age < 5 ? alert('Вы младенец') :
         age > 5 && age < 10 ? alert('Вы ребенок') : 
         age > 10 && age < 18 ? alert('Вы подросток') : 
