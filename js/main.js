@@ -99,16 +99,12 @@ const makeElement = (tagName, className) => {
     
 }
 
-
-
 const getCharacters = async () => {
     const res = await fetch ('https://rickandmortyapi.com/api/character');
-    const charactersList = await res.json();
-    const { results } = charactersList;
+    const { results }  =  await res.json();
 
 for (let i = 0; i < results.length; i++) {
 
-    
     const { name , gender, image } = results[i];
 
     const charName = root.appendChild(makeElement('p','name'));
