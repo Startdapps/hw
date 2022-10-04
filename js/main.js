@@ -112,8 +112,8 @@ for (let i = 0; i < results.length; i++) {
     const charPicture =  root.appendChild(makeElement ('img','picture'));
     charName.style.borderTop = 'solid';
 
-    charName.innerText = name;
-    charGender.innerText = gender;
+    charName.innerText = `Name: ${name}`;
+    charGender.innerText = `Gender: ${gender}`;
     charPicture.src = image;
 }
 }
